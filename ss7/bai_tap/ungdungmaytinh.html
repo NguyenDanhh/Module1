@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính </title>
+</head>
+<body>
+<h3>Caculator</h3>
+<table>
+    <tr>
+        <td>
+            <input type="text"id="numBer1" >
+        </td>
+        <td>
+            <input type="text"id="numBer2" >
+        </td>
+
+    </tr>
+    <tr>
+        <button onclick="cong()">Addition(+)</button>
+        <button onclick="tru()">Subtraction(-)</button>
+        <button onclick="nhan()">Multiplication(X)</button>
+        <button onclick="chia()">Divisiom(/)</button>
+    </tr>
+    <tr>
+        <td><div id="showResult"></div></td>
+    </tr>
+
+
+</table>
+<script>
+    function cong() {
+        let showResult = document.getElementById("showResult");
+        let bienSo1 = document.getElementById("numBer1").value;
+        let bienSo2 = document.getElementById("numBer2").value;
+        bienSo1 = parseFloat(bienSo1)
+        bienSo2 = parseFloat(bienSo2)
+        let congHaiSo = bienSo1+bienSo2;
+        showResult.innerHTML = `Result disivion: ${congHaiSo}`
+    }
+    function tru() {
+        let showResult = document.getElementById("showResult");
+        let bienSo1 = document.getElementById("numBer1").value;
+        let bienSo2 = document.getElementById("numBer2").value;
+        bienSo1 = parseFloat(bienSo1)
+        bienSo2 = parseFloat(bienSo2)
+        let truHaiSo = bienSo1-bienSo2;
+        showResult.innerHTML = `Result disivion: ${truHaiSo}`
+    }
+    function nhan() {
+        let showResult = document.getElementById("showResult");
+        let bienSo1 = document.getElementById("numBer1").value;
+        let bienSo2 = document.getElementById("numBer2").value;
+        bienSo1 = parseFloat(bienSo1)
+        bienSo2 = parseFloat(bienSo2)
+        let nhanHaiSo = bienSo1*bienSo2;
+        showResult.innerHTML = `Result disivion: ${nhanHaiSo}`
+    }
+    function chia() {
+        let showResult = document.getElementById("showResult");
+        let bienSo1 = document.getElementById("numBer1").value;
+        let bienSo2 = document.getElementById("numBer2").value;
+        bienSo1 = parseFloat(bienSo1)
+        bienSo2 = parseFloat(bienSo2)
+        let chiaHaiSo = bienSo1/bienSo2;
+        showResult.innerHTML = `Result disivion: ${chiaHaiSo}`
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ </title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>Fromcurrency</th>
+        <th>to currency</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="text"id="number">
+        </td>
+        <td>
+            <select id="1">
+                <option value="VND">VND</option>
+                <option value="USA">USA</option>
+            </select>
+        </td><td>
+        <select id="2">
+            <option value="USA">USA</option>
+            <option value="VND">VND</option>
+        </select>
+
+    </td>
+        <td>
+            <button onclick="convertMoney()">kết quả </button>
+        </td>
+
+    </tr>
+    
+
+</table>
+<script>
+    function convertMoney() {
+        let amount = document.getElementById("number").value;
+        amount = parseFloat(amount)
+        let from = document.getElementById("1");
+        let to = document.getElementById("2");
+        if (from.value =="USA" && to.value == "VND"){
+            amount=amount*23000;
+            alert(amount)
+
+        }
+        else if (from.value=="VND"&& to.value=="USA"){
+            amount= amount/23000;
+            alert(amount)
+        }
+        else {
+            alert(amount)
+        }
+
+
+
+    }
+</script>
+
+
+</body>
+</html>
