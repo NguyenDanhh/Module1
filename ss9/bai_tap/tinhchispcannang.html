@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cân nặng</title>
+</head>
+<body>
+<h3>Tính chỉ số cân nặng</h3>
+<tr>
+    <td>
+        Nhập cân nặng (kg) : <input type="text" id="canNang">
+    </td>
+</tr><br>
+<tr>
+    <td>
+        Nhập chiều cao (m): <input type="text" id="chieuCao">
+    </td>
+</tr>
+<tr><br>
+    <button onclick="kiemTra()">kiểm tra</button>
+</tr>
+<tr>
+    <td><div id="showResult"></div></td>
+</tr>
+<script>
+    function kiemTra() {
+        let showResult = document.getElementById("showResult")
+        let height = +document.getElementById("chieuCao").value;
+        let weight = +document.getElementById("canNang").value;
+        let bmi;
+        bmi = weight/(height*height);
+        if(bmi<18.5){
+            showResult.innerHTML = `Chỉ số BMI của bạn là : ${bmi} bạn đang thiếu cân ăn nhiều vào`
+        }else if(bmi>=18.5 && bmi<25){
+            showResult.innerHTML = `Chỉ số BMI của bạn là : ${bmi} bạn bình thường `
+        }if(bmi>= 25.0 && bmi<30.0){
+            showResult.innerHTML = `Chỉ số BMI của bạn là : ${bmi} bạn đang thừa cân ăn kiêng lại nào`
+        }else if(bmi>=30.0){
+        showResult.innerHTML = `Chỉ số BMI của bạn là : ${bmi} bạn đang béo phì , tập gym nào! `
+        }
+
+    }
+</script>
+
+</body>
+</html>

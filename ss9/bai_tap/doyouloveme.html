@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doyouloveme</title>
+</head>
+<body>
+<h2>KIKI Do You Love Me ?</h2>
+<tr>
+    <td><button onclick="clickYes()" id="yes">Yes</button> </td>
+    <td><button onmouseover="clickNo()" id="noClick">No</button></td>
+</tr>
+<p>By Danh đẹp trai</p>
+
+<script>
+    function clickYes() {
+        alert("Yêu cmm DUY ĐÔ")
+    }
+    function clickNo() {
+        let noClick = document.getElementById("noClick");
+        noClick.style.position = "absolute";
+        let width = Math.floor(Math.random() * 500 + 100);
+        let height = Math.floor(Math.random() * 300 + 50);
+        noClick.style.top = width + "px";
+        noClick.style.right = width + "px";
+
+
+    }
+</script>
+
+</body>
+</html>
