@@ -5,17 +5,17 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
-        let suDung = +prompt("Nhập số điện tiêu thụ ");
-        let tienDien;
-        if(suDung <=100){
-            tienDien=suDung * 650;
-            document.write("Số tiền điện phải trả là " + tienDien);
-        } else if(suDung<=150 && suDung>100){
-            tienDien=100*650+1200*(suDung-100);
-            document.write("Số tiền điện phải trả là " + tienDien );
-        }
+<script>
+    let suDung = +prompt("Nhập số điện tiêu thụ ");
+    let tienDien;
+    if (suDung <= 100) {
+        tienDien = suDung * 650;
+        document.write("Số tiền điện phải trả là " + tienDien);
+    } else if (suDung <= 150 && suDung > 100) {
+        tienDien = 100 * 650 + 1200 * (suDung - 100);
+        document.write("Số tiền điện phải trả là " + tienDien);
+    }
 
-    </script>
+</script>
 </body>
 </html>

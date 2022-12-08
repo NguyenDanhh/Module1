@@ -6,22 +6,22 @@
 </head>
 <body>
 <script>
-// phương trình bậc 2 : ax^2 + bx + c = 0
+    // phương trình bậc 2 : ax^2 + bx + c = 0
     let a = +prompt("Nhâp vào a :");
     let b = +prompt("Nhập vào b ");
     let c = +prompt("Nhập vào c")
-    let x1 , x2 , delta;
-    delta = (b**2) - (4*a*c);
-    if (delta == 0){
-        x1 = x2 =-b/(2*a);
-        document.write("Phường trình có nghiệm kép " );
-    }else if( delta > 0 ){
-        x1 = (-b + delta) / (2*a);
-        x2 = (-b - delta) / (2*a);
+    let x1, x2, delta;
+    delta = (b ** 2) - (4 * a * c);
+    if (delta == 0) {
+        x1 = x2 = -b / (2 * a);
+        document.write("Phường trình có nghiệm kép ");
+    } else if (delta > 0) {
+        x1 = (-b + delta) / (2 * a);
+        x2 = (-b - delta) / (2 * a);
         document.write("Phương trình có 2 nghiệm phân biệt : <br>");
-        document.write("x1 = " + x1 );
-        document.write("  x2 = " + x2 );
-    }else if( delta < 0){
+        document.write("x1 = " + x1);
+        document.write("  x2 = " + x2);
+    } else if (delta < 0) {
         document.write("Phương trình vô nghiệm ");
     }
 
