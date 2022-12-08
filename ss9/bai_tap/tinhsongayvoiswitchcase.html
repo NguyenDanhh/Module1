@@ -18,7 +18,7 @@
 </tr>
 <script>
     function tinhSoNgay() {
-        let showresult = document.getElementById("showResult");
+        let showResult = document.getElementById("showResult");
         let month = +document.getElementById("checkDay").value;
         switch (month) {
             case 1:
@@ -28,16 +28,16 @@
             case 8:
             case 10:
             case 12:
-                showresult.innerHTML =  ` tháng ${month}có 31 ngày`
+                showResult.innerHTML =  ` tháng ${month}có 31 ngày`;
                 break;
             case 2:
-                showresult.innerHTML = `Tháng ${month} có 28 hoặc 29 ngày`
+                showResult.innerHTML = `Tháng ${month} có 28 hoặc 29 ngày`;
                 break;
             case 4:
             case 6:
             case 9 :
             case 11:
-                showresult.innerHTML =`Tháng ${month} có 30 ngày`
+                showResult.innerHTML =`Tháng ${month} có 30 ngày`;
                 break;
 
 
