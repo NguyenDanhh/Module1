@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Kiểm tra có phải số tuổi của một người </h2>
+<tr>
+    <td><input type="Text" id="age"></td>
+    <td><button onclick="clickMe()">Kết quả </button></td>
+</tr>
+<script>
+    function clickMe() {
+        let age = +document.getElementById("age").value;
+        age = parseFloat(age);
+        if (age<120 && age>0){
+            alert("Yess");
+        }else if(age>120){
+            alert("NOO");
+        }
+
+    }
+
+</script>
+
+</body>
+</html>
