@@ -5,10 +5,16 @@
     <title>Title</title>
 </head>
 <body>
+
 <script>
     let a = +prompt("Nhập cạnh a vào đây :");
-    S = a ** 2;
-    document.write("Diện tích hình vuông là :" + S);
+    if (a > 0) {
+        let s = a ** 2;
+        document.write("Diện tích hình vuông là :" + s);
+    } else {
+        document.write("Số vừa nhập không hợp lệ ");
+    }
+
 
 </script>
 

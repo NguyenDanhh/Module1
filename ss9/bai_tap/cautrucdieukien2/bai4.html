@@ -8,8 +8,14 @@
 <script>
     let a = +prompt("Nhap vao giá trị cho a :");
     let b = +prompt("Nhập vào giá trị cho b :");
-    S = a * b;
-    document.write("Diện tích hình chủ nhật là : " + S);
+    if (a > 0 && b > 0) {
+        let s = a * b;
+        document.write("Diện tích hình chủ nhật là : " + s);
+    } else {
+        document.write("Hai số đều phải lớn hơn 0");
+
+    }
+
 </script>
 </body>
 </html>

@@ -5,26 +5,24 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
-        // công thức : hoa hồng = doanh số * phần trăm hoa hồng / tổng doanh thu
-        // 5% nếu tổng doanh số nhỏ hơn hoặc bằng 100 triệu.
-        //
-        // 10% nếu tổng doanh số nhỏ hơn hoặc bằng 300 triệu.
-        //
-        // 20 % nếu tổng doanh số là lớn hơn 300 triệu.
-        let doanhSo = +prompt("Nhập tổng giá trị doanh số : ");
-        let hoaHong;
-        hoaHong=parseFloat(hoaHong);
-        if (doanhSo <= 100){
-            hoaHong=( doanhSo * 5 ) / 100
-        }
-        else if(doanhSo <= 300 && doanhSo > 100 ){
-            hoaHong = (doanhSo * 10 )/100
-        }
-        else if(doanhSo > 300){
-            hoaHong = (doanhSo * 20)/100
-        }
-        document.write(hoaHong)
-    </script>
+<script>
+    // công thức : hoa hồng = doanh số * phần trăm hoa hồng / tổng doanh thu
+    // 5% nếu tổng doanh số nhỏ hơn hoặc bằng 100 triệu.
+    //
+    // 10% nếu tổng doanh số nhỏ hơn hoặc bằng 300 triệu.
+    //
+    // 20 % nếu tổng doanh số là lớn hơn 300 triệu.
+    let doanhSo = +prompt("Nhập tổng giá trị doanh số : ");
+    let hoaHong;
+    hoaHong = parseFloat(hoaHong);
+    if (doanhSo <= 100) {
+        hoaHong = (doanhSo * 5) / 100;
+    } else if (doanhSo <= 300 && doanhSo > 100) {
+        hoaHong = (doanhSo * 10) / 100;
+    } else if (doanhSo > 300) {
+        hoaHong = (doanhSo * 20) / 100;
+    }
+    document.write(hoaHong);
+</script>
 </body>
 </html>
