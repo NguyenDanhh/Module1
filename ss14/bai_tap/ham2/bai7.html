@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1 = +prompt(" Nhập vào số nguyên thứ nhất  ");
+    let number2 = +prompt(" Nhập vào số nguyên thứ hai ");
+    document.write(swap(number1, number2));
+
+    function swap(number1, number2) {
+        let temp;
+        temp = number2;
+        number2 = number1;
+        number1 = temp;
+        return [number1, number2];
+
+    }
+
+</script>
+</body>
+</html>

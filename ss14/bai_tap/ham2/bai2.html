@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tinhDienTichVaChuVi(r) {
+        let s = pi*r*r;
+        document.write('diên tích hình tròn là :' + s + '<br>');
+        let c= 2*pi*r;
+        document.write('chu vi hình tròn là : ' + c);
+        return [s ,c] ;
+
+    }
+
+    const pi = Math.PI;
+    let r = +prompt("Nhâp r :");
+    document.write(tinhDienTichVaChuVi(r));
+
+</script>
+</body>
+</html>

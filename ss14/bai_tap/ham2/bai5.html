@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1 = prompt("nhập số thứ nhất  :");
+    let number2 = prompt("nhập số thứ hai  :");
+    let number3 = prompt("nhập số thứ ba :");
+    // gọi hàm
+    findMin(number1,number2,number3);
+
+    function findMin(number1,number2,number3) {
+        min = number1;
+        if (min > number2) {
+            min = number2;
+        }
+        if (min > number3) {
+            min = number3;
+        }
+        document.write("Số nhỏ nhất trong ba số là " + min);
+        return min;
+    }
+
+
+</script>
+</body>
+</html>

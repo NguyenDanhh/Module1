@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soNguyen = +prompt("Nhập một số nguyên bất kì :");
+    document.write(tinhGiaiThua(soNguyen));
+
+    function tinhGiaiThua(soNguyen) {
+        let giaiThua = 1;
+        for (i = 1; i <= soNguyen; i++) {
+            giaiThua = giaiThua * i;
+        }
+        return giaiThua;
+
+    }
+</script>
+</body>
+</html>
