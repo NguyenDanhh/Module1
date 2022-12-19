@@ -8,10 +8,11 @@
 <script>
     let number = prompt("Nhập vào số cần kiểm tra :");
     document.write(checkNumber(number));
+
     function checkNumber(number) {
-        if(number == +number){
+        if (number == +number) {
             return number + " Là ký tự số ";
-        }else {
+        } else {
             return number + " Không phải là ký tự số ";
         }
 
