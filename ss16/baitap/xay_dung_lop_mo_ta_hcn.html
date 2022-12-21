@@ -45,8 +45,8 @@
     let myRectangle = new Rectangle(100, 50)
     alert(myRectangle.area());
     alert(myRectangle.perimeter());
-    var c = document.getElementById("canvasRectangle");
-    var ctx = c.getContext("2d");
+    let c = document.getElementById("canvasRectangle");
+    let ctx = c.getContext("2d");
     ctx.beginPath();
     ctx.rect(20, 20, myRectangle.getWidth(), myRectangle.getLength());
     ctx.stroke();
