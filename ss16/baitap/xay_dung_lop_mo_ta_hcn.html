@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="rectanle"></div>
+<canvas id="canvasRectangle" width="500" height="600" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+    class Rectangle {
+        constructor(width, length) {
+            this.width = width;
+            this.length = length;
+        }
+
+        getWidth() {
+            return this.width;
+        }
+
+        getLength() {
+            return this.length;
+        }
+
+        setWidth(width) {
+            this.width = width;
+        }
+
+        setLength(length) {
+            this.length = length;
+        }
+
+
+        area() {
+            return this.width * this.length;
+        }
+
+        perimeter() {
+            return (this.width + this.length) * 2;
+
+        }
+
+    }
+
+    let myRectangle = new Rectangle(100, 50)
+    alert(myRectangle.area());
+    alert(myRectangle.perimeter());
+    var c = document.getElementById("canvasRectangle");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.rect(20, 20, myRectangle.getWidth(), myRectangle.getLength());
+    ctx.stroke();
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

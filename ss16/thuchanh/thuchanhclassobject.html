@@ -5,6 +5,22 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    function Student(id, name, address) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
 
+        // phương thức getInfor() trả về thông tin của đối tượng
+        this.getInfor = function () {
+            return ' id = ' + this.id + ' name = ' + this.name + ' address = ' + this.address;
+
+        }
+
+
+    }
+    let student = new Student(1 , 'Nguyễn Công Thành Danh' ,'Đà Nẵng');
+    document.write(student.getInfor());
+</script>
 </body>
 </html>
