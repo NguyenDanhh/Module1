@@ -6,7 +6,18 @@
 </head>
 <body>
 <script>
-    
+    let s = prompt("nhập vào chuối bất kỳ : ");
+    let string = s.split("");
+    for (let i = 0; i < string.length; i++) {
+        for (let j = i + 1; j < string.length; j++) {
+            if (string[i] === string[j]) {
+                string.splice(j, 1);
+                j--;
+            }
+        }
+    }
+    document.write("chuối trước khi nhập : " + s + '<br>');
+    document.write("chuỗi sau khi kiểm tra : " + string);
 </script>
 </body>
 </html>
