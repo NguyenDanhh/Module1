@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Melu</h2>
+<table border="1">
+    <tr>
+        <th>Sản phẩm</th>
+        <th>Số lượng</th>
+        <th>Đơn giá</th>
+    </tr>
+    <tr>
+        <td>cà phê</td>
+        <td><input type="number" id="caphe"></td>
+        <td>21000</td>
+    </tr>
+    <tr>
+        <td>cam vắt</td>
+        <td><input type="number" id="camvat"></td>
+        <td>15000</td>
+    </tr>
+    <tr>
+        <td>nước ép cà rốt</td>
+        <td><input type="number" id="nuocep"></td>
+        <td>15000</td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="total()"> Tổng tiền</button>
+        </td>
+        <td id="sum"></td>
+    </tr>
+
+</table>
+<script>
+    function total() {
+        let coffe = document.getElementById('caphe').value;
+        let orange = document.getElementById('camvat').value;
+        let carot = document.getElementById('nuocep').value;
+        let sum;
+        sum = coffe * 21000 + orange * 15000 + carot * 15000;
+        document.getElementById('sum').innerHTML = sum;
+
+
+    }
+</script>
+</body>
+</html>

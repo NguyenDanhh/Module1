@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let luongNhanVien = +prompt("Nhập vào lương nhân viên (triệu):");
+    let thue;
+    let luongSauThue;
+    if (luongNhanVien >= 15) {
+        thue = 0.2 * luongNhanVien;
+        luongSauThue = luongNhanVien - thue;
+        document.write('thuế : ' + thue + ' triệu ' + 'VNĐ' + '<br>');
+    } else if (luongNhanVien < 15 && luongNhanVien >= 7) {
+        thue = 0.1 * luongNhanVien;
+        luongSauThue = luongNhanVien - thue;
+        document.write('thuế : ' + thue + 'VNĐ' + '<br>');
+    } else if (luongNhanVien < 7) {
+        thue = 0.05 / 100 * luongNhanVien;
+        luongSauThue = luongNhanVien - thue;
+        document.write('thuế : ' + thue + 'VNĐ' + '<br>');
+    }
+    document.write('Số lương nhận được sau thuế là : ' + luongSauThue + ' triệu VNĐ');
+
+</script>
+</body>
+</html>
