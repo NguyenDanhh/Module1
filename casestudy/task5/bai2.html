@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = +prompt("Nhập vào độ dài của mảng ");
+    let array1 = new Array(number);
+    document.write("Độ dài của mảng là : " + number + '<br>');
+    for (let i = 0; i < array1.length; i++) {
+        let number2 = +prompt('Nhập vào độ dài của mảng ' + i);
+        let array2 = new Array(number2);
+        document.write("Độ dài của mảng thứ " + i + " là : " + number2 + '<br>')
+        for (let j = 0; j < array2.length; j++) {
+            array2[j] = +prompt("Nhập giá trị cho phần tử ")
+            document.write("giá trị phần tử thứ " + j + ' là : ' + array2[j] + '<br>');
+        }
+        array1[i] = array2;
+    }
+
+
+    function findNumber(arr) {
+        let count = 0;
+        let array3 = [];
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                let flag = true;
+                for (let z = 2; z <= Math.sqrt(arr[i][j]); z++) {
+
+                    if (arr[i][j] % z === 0) {
+                        flag = false;
+                        break;
+                    }
+                }
+                if (flag) {
+                    array3.push(arr[i][j]);
+                    count++;
+                }
+            }
+        }
+        document.write("có " + count + ' số nguyên tố có trong mảng ' + '<br>');
+        return array3;
+
+    }
+
+    document.write('các số nguyên tố có trong mảng 2 chiều : ' + findNumber(array1));
+</script>
+</body>
+</html>

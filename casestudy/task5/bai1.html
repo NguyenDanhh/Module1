@@ -6,7 +6,35 @@
 </head>
 <body>
 <script>
-    dfd
+    let m = +prompt("nhập độ dài của mảng");
+    let arr = new Array(m);
+    document.write("Độ dài của mảng là : " + m + '<br>');
+    for (let i = 0; i < m; i++) {
+        let n = +prompt("nhập dài của mảng thứ " + i);
+        let array = new Array(n);
+        document.write("Độ dài của mảng thứ " + i + " là : " + n + '<br>')
+        for (let j = 0; j < n; j++) {
+            array[j] = +prompt("nhập giá trị cho phần tử ");
+            document.write("giá trị phần tử thứ " + j + ' là : ' + array[j] + '<br>');
+        }
+        arr[i] = array;
+    }
+
+    function sumNumber(mang) {
+        let sum = 0;
+        for (let i = 0; i < mang.length; i++) {
+            for (let j = 0; j < mang[i].length; j++) {
+                if (mang[i][j] % 2 == 0) {
+                    sum = sum + mang[i][j];
+                }
+            }
+        }
+        return sum;
+
+    }
+
+    document.write('Tổng các số chẵn trong ma trận là :' + sumNumber(arr))
+
 </script>
 </body>
 </html>
