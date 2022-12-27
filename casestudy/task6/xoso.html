@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Xổ số Codegym</h2>
+<table border="4px">
+    <tr>
+        <td>15</td>
+        <td>25</td>
+        <td>35</td>
+        <td>45</td>
+        <td>55</td>
+        <td>65</td>
+
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+        <td>60</td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="muaVe()">Mua Vé</button>
+        </td>
+        <td>
+            <button onclick="xemKetQua()">Xem Kết Quả</button>
+        </td>
+    </tr>
+
+</table>
+<script>
+    let ve;
+
+    function muaVe() {
+        let arr = [15, 25, 35, 45, 55, 65, 10, 20, 30, 40, 50, 60];
+        ve = +prompt("Bạn muốn mua số nào ? ");
+        for(let i = 0 ; i < arr.length ; i++){
+            if (ve === arr[i]) {
+                alert("Số vé bạn mùa là : " + ve + ' ; Hãy Click Xem Kết Quả để xổ số ');
+            } if (ve !== arr[i]) {
+                alert("mời bạn mua vé của ngày hôm nay ");
+                break;
+            }
+        }
+    }
+
+    function xemKetQua() {
+        switch (ve) {
+            case 25:
+            case 35:
+            case 45:
+            case 55:
+            case 65:
+            case 10:
+            case 30:
+            case 40:
+            case 60:
+                alert("Chúc Bạn May Mắn Lần Sau ^^");
+                break;
+            case 15 :
+                alert("Chúc mừng bạn đạt giải nhất ");
+                break;
+            case 20 :
+                alert("Chúc mừng bạn đạt giải nhì ");
+                break;
+            case 50:
+                alert('Chúc mừng bạt đạt giải ba');
+                break;
+        }
+
+    }
+</script>
+
+</table>
+</body>
+</html>
