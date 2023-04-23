@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
 </head>
 <body>
+<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="...">
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Hello, world! This is a toast message.
+        </div>
+    </div>
+</div>
+
 <script>
-    for (i = 1; i <= 100; i++) {
-        if (i % 3 == 0 && i % 5 == 0) {
-            document.write("FizzBuzz");
-            document.write('<br>');
-        } else if (i % 5 == 0) {
-            document.write('Buzz');
-            document.write('<br>');
-        } else if (i % 3 == 0) {
-            document.write("Fizz");
-            document.write('<br>');
-        } else {
-            document.write(i);
-            document.write('<br>');
-        }
-    }
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Your work has been saved',
+        showConfirmButton: false,
+        timer: 1500
+    })
 </script>
 </body>
 </html>

@@ -5,22 +5,23 @@
     <title>Title</title>
 </head>
 <body>
-<script>
-    function Student(id, name, address) {
-        this.id = id;
-        this.name = name;
-        this.address = address;
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <div class="row">
+                <div class="col-12">
+                    <form method="post">
+                        <input type="hidden" name="id" value="${category.getIdCategory()}">
+                        <label>Post</label>
+                        <input type="text" name="post" value="${category.getPostCategory()}">
 
-        // phương thức getInfor() trả về thông tin của đối tượng
-        this.getInfor = function () {
-            return ' id = ' + this.id + ' name = ' + this.name + ' address = ' + this.address;
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+            </div>
 
-        }
-
-
-    }
-    let student = new Student(1 , 'Nguyễn Công Thành Danh' ,'Đà Nẵng');
-    document.write(student.getInfor());
-</script>
+        </div>
+        <div class="col-3"></div>
+    </div>
 </body>
 </html>

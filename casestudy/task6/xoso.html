@@ -36,18 +36,9 @@
 </table>
 <script>
     let ve;
-
     function muaVe() {
-        let arr = [15, 25, 35, 45, 55, 65, 10, 20, 30, 40, 50, 60];
         ve = +prompt("Bạn muốn mua số nào ? ");
-        for(let i = 0 ; i < arr.length ; i++){
-            if (ve === arr[i]) {
                 alert("Số vé bạn mùa là : " + ve + ' ; Hãy Click Xem Kết Quả để xổ số ');
-            } if (ve !== arr[i]) {
-                alert("mời bạn mua vé của ngày hôm nay ");
-                break;
-            }
-        }
     }
 
     function xemKetQua() {
@@ -72,6 +63,7 @@
             case 50:
                 alert('Chúc mừng bạt đạt giải ba');
                 break;
+                default : alert("mời bạn mua vé số ngày hôm nay");
         }
 
     }
